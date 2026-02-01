@@ -238,7 +238,7 @@
 
   function validateName(value) {
     if (!value || value.trim().length < 2) return false;
-    const nameRegex = /^[a-zA-ZÀ-ÿs\-']{2,50}$/;
+    const nameRegex = /^[a-zA-ZÀ-ÿ\s\-']{2,50}$/;
     return nameRegex.test(value.trim());
   }
 
